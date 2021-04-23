@@ -27,7 +27,7 @@ void setup() {
   delay(250); // wait for reset
 
   // Setting pins as outputs
-  for (int ii = start_offset;ii<sizeof(pin_states)/sizeof(bool)+start_offset;ii++){
+  for (int ii = start_offset;ii<(sizeof(pin_states)/sizeof(bool))+start_offset;ii++){
     pinMode(ii,OUTPUT); // set pins as outputs
   }
 }
@@ -41,9 +41,11 @@ void loop() {
     tot_val.replace("@",""); // to prevent errors (. and @ should not be used in comm.)
     if (ser_byte=='\n'){ // wait for newline
       int indx = String(tot_val).toInt()-start_offset; // index of pin to control
-      pin_states[indx] = !bool(pin_states[indx]); // array pin state
+      if (indx<sizeof(pin_states)/sizeof(bool) && indx>=0){ // only alter open pin values
+        pin_states[indx] = !bool(pin_states[indx]); // array pin state
+        digitalWrite(String(tot_val).toInt(),pin_states[indx]); // turn pin on/off        
+      }
       delay(50); // required delay before TX (after RX) - for stability
-      digitalWrite(String(tot_val).toInt(),pin_states[indx]); // turn pin on/off
       ble_device.println(tot_val); // uncomment to print reading
       tot_val = ""; // clear serial input variable
     }
