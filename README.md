@@ -6,7 +6,7 @@ Get your TinyBlueX module: [TinyBlueX Bluetooth Board](https://makersportal.com/
 # 
 ### JUMP TO:
 <a href="#wiring">- Wiring Diagram</a><br>
-<a href="#example">- TinyBlueX Example with the BLExAR iOS App</a><br>
+<a href="#example">- TinyBlueX BLE Chat with the BLExAR iOS App</a><br>
 <a href="#control">- Control Code for TinyBlueX</a><br>
 <a href="#data">- Sending Temperature Data From TinyBlueX to iOS Device</a><br>
 
@@ -30,7 +30,7 @@ The wiring between the TinyBlueX and Arduino Uno board required for uploading co
 
 <a id="example"></a>
 # - TinyBlueX BLE Chat with the BLExAR iOS App -
-The TinyBlueX can be connected to the BLExAR iOS app. The code titled 'TinyBlueX_test.ino' receives text sent from the iOS device and sends it back to the iOS device. It is the simplest example that demonstrates the functionality of the TinyBlueX board.
+The TinyBlueX can be connected to the BLExAR iOS app. The code titled 'BLE_chat.ino' receives text sent from the iOS device and sends it back to the iOS device. It is the simplest example that demonstrates the functionality of the TinyBlueX board.
 
 ![TinyBlueX BLE Chat](/images/tinybluex_BLE_chat.jpeg)
 
