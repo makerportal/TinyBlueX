@@ -6,9 +6,9 @@ Get your TinyBlueX module: [TinyBlueX Bluetooth Board](https://makersportal.com/
 # 
 ### JUMP TO:
 <a href="#wiring">- Wiring Diagram</a><br>
-<a href="#examples">- TinyBlueX Example with an Arduino Uno Board</a><br>
-<a href="#calib">- Calibration with Arduino and Python3</a><br>
-<a href="#pitot">- Arduino Pitot Tube Airspeed Sensor</a><br>
+<a href="#example">- TinyBlueX Example with the BLExAR iOS App</a><br>
+<a href="#control">- Control Code for TinyBlueX</a><br>
+<a href="#data">- Sending Temperature Data From TinyBlueX to iOS Device</a><br>
 
 The TinyBlueX library can be downloaded using git:
 
@@ -27,3 +27,15 @@ The wiring between the TinyBlueX and Arduino Uno board required for uploading co
 | D11 | 5 |
 | D12 | 6 |
 | D13 | 7 |
+
+<a id="example"></a>
+# - TinyBlueX Example with the BLExAR iOS App -
+The TinyBlueX can be connected to the BLExAR iOS app. The code titled 'TinyBlueX_test.ino' receives text sent from the iOS device and sends it back to the iOS device. It is the simplest example that demonstrates the functionality of the TinyBlueX board.
+
+<a id="control"></a>
+# - Control Code for TinyBlueX -
+Turning on and off an RGB LED wired to the TinyBlueX.
+
+<a id="data"></a>
+# - Sending Temperature Data From TinyBlueX to iOS Device -
+Reading DHT22 temperature and humidity and sending the values to the iOS device via BLExAR.
