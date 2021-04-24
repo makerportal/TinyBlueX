@@ -29,8 +29,10 @@ The wiring between the TinyBlueX and Arduino Uno board required for uploading co
 | D13 | 7 |
 
 <a id="example"></a>
-# - TinyBlueX Example with the BLExAR iOS App -
+# - TinyBlueX BLE Chat with the BLExAR iOS App -
 The TinyBlueX can be connected to the BLExAR iOS app. The code titled 'TinyBlueX_test.ino' receives text sent from the iOS device and sends it back to the iOS device. It is the simplest example that demonstrates the functionality of the TinyBlueX board.
+
+![TinyBlueX BLE Chat](/images/tinybluex_BLE_chat.jpeg)
 
 <a id="control"></a>
 # - Control Code for TinyBlueX -
