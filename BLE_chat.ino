@@ -30,7 +30,7 @@ void loop() {
   char ser_byte = ble_device.read();
   if (int(ser_byte)!=-1){ // make sure it's a valid character
       tot_val+=String(ser_byte); // if the input is over 1 character, this handles that
-      tot_val.trim(); // trim any white space
+//      tot_val.trim(); // uncomment to trim any white space (useful for data transfer)
       tot_val.replace(".",""); // the . and @ must be stripped from reading
       tot_val.replace("@",""); // to prevent errors (. and @ should not be used in comm.)
       if (ser_byte=='\n'){ // wait for newline
