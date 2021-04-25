@@ -21,12 +21,12 @@ void setup() {
   ble_device.begin(9600); // start BLE device
   delay(500); // wait until BLE device starts
 
-  // Once the code is uploaded once, the below can be commented out
-  // (the name change only needs to occur once)
-  ble_device.println("AT+NAMETinyBlue"); // change device name
-  delay(250); // wait for change
-  ble_device.println("AT+RESET"); // reset module to enact name change
-  delay(500); // wait for reset
+  // Uncommenting the code below will change thee name of the
+  // BLE module (the name change only needs to occur once)
+//  ble_device.println("AT+NAMETinyBlue"); // change device name
+//  delay(250); // wait for change
+//  ble_device.println("AT+RESET"); // reset module to enact name change
+//  delay(3000); // wait for reset
 }
 
 void loop() {
