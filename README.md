@@ -44,6 +44,8 @@ Use code:
 
 to turn an RGB LED wired to pins 2,3,7 on and off using the BLExAR app. 
 
+![TinyBlueX BLE Control](/images/TinyBlueX_w_BLExAR_app.JPG)
+
 <a id="data"></a>
 # - Sending Temperature Data From TinyBlueX to iOS Device -
 Reading DHT22 temperature and humidity and sending the values to the iOS device via BLExAR.
