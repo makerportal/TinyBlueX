@@ -42,7 +42,7 @@ receives text sent from the iOS device and sends it back to the iOS device. It i
 Use code: 
 - BLExAR_control.ino
 
-to turn an RGB LED wired to pins 2,3,7 on and off using the BLExAR app. 
+to turn an RGB LED wired to pins 2,3,7 on and off using the BLExAR app. The pins can be controlled using BLExAR pins 2,3,4.
 
 ![TinyBlueX BLE Control](/images/TinyBlueX_w_BLExAR_app.JPG)
 
